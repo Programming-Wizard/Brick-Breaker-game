@@ -1,4 +1,4 @@
-package application;
+ package application;
 
 import java.io.IOException;
 
@@ -18,9 +18,9 @@ public class Main extends Application {
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("BrickBreaker.fxml"));
 			Pane root = loader.load();
 			Scene scene = new Scene(root, 680, 680);
-			Image icon = new Image("D:/JAVAFX_projects/Brick_Breaker/src/application/brickgameicon.png");
+//			Image icon = new Image("brickgameicon.png"); 
 			primaryStage.setTitle("Brick Breaker");
-			primaryStage.getIcons().add(icon);
+//			primaryStage.getIcons().add(icon); 
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 
 			Controllerforbrickbreakker controller = loader.getController();
